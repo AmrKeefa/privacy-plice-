@@ -78,9 +78,10 @@
       <h2>البيانات التي نجمعها</h2>
       <ul>
         <li>
-          <strong>الموقع الجغرافي (تقريبي):</strong>
-          يُستخدم <em>فقط</em> لحساب مواقيت الصلاة لمنطقتك.
-          لا يُرسل موقعك إلى خوادمنا ولا يُخزَّن خارج جهازك.
+          <strong>الموقع الجغرافي (دقيق أو تقريبي حسب الإذن الذي تمنحه):</strong>
+          يُستخدم <em>فقط</em> لحساب مواقيت الصلاة واتجاه القبلة لمنطقتك.
+          يُحفظ على جهازك، ولا نملك خوادم تستقبله. تُحسب المواقيت على الجهاز غالباً؛
+          وعند الحاجة تُرسَل الإحداثيات إلى خدمة AlAdhan لحساب المواقيت فقط، دون أي بيانات تعريفية.
         </li>
         <li>
           <strong>بيانات التطبيق (محلية):</strong>
@@ -98,6 +99,20 @@
           نجمع بيانات مجهولة الهوية (مثل الميزات المُستخدمة وعدد الجلسات)
           لفهم كيفية استخدام التطبيق وتحسين تجربتك.
         </li>
+        <li>
+          <strong>قياس الإعلانات (Meta SDK):</strong>
+          نعلن عن التطبيق على فيسبوك وإنستغرام. عند فتح التطبيق، ترسل مكتبة Meta
+          بيانات تقنية (مثل فتح التطبيق وتثبيته، نوع الجهاز ونظام التشغيل، ومعرّفات تقنية)
+          لمعرفة ما إذا كان التثبيت قد جاء من أحد إعلاناتنا.
+          لا نفعّل جمع المعرّف الإعلاني (Advertising ID / IDFA)، ولا نستخدم هذه البيانات
+          لتتبعك عبر تطبيقات أو مواقع أخرى، ولا نعرض أي إعلانات داخل التطبيق.
+        </li>
+        <li>
+          <strong>الملاحظات والاقتراحات (اختياري):</strong>
+          إذا أرسلت ملاحظة من داخل التطبيق، نستلم نص رسالتك ونسخة التطبيق ولغته،
+          وبريدك الإلكتروني فقط إذا اخترت كتابته للرد عليك.
+          تُحفظ في جدول بيانات خاص بنا على Google ولا تُستخدم لأي غرض آخر.
+        </li>
       </ul>
     </div>
 
@@ -105,8 +120,8 @@
       <h2>ما لا نجمعه أبداً</h2>
       <ul>
         <li>لا نطلب إنشاء حساب أو تسجيل دخول.</li>
-        <li>لا نجمع اسمك أو بريدك الإلكتروني أو أي بيانات تعريفية.</li>
-        <li>لا نبيع بياناتك ولا نشاركها مع أطراف ثالثة لأغراض تجارية.</li>
+        <li>لا نجمع اسمك، ولا بريدك الإلكتروني إلا إذا كتبته بنفسك في نموذج الملاحظات.</li>
+        <li>لا نبيع بياناتك. نشارك فقط البيانات التقنية المذكورة أعلاه مع Google (Firebase) وMeta لقياس الأداء والإعلانات.</li>
         <li>لا نتتبع موقعك في الخلفية.</li>
       </ul>
     </div>
@@ -128,6 +143,11 @@
         <li>
           <a href="https://firebase.google.com/support/privacy" target="_blank">
             Google Firebase (Crashlytics & Analytics)
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/privacy/policy/" target="_blank">
+            Meta (Facebook SDK) – لقياس الإعلانات
           </a>
         </li>
         <li>
@@ -163,7 +183,7 @@
       </p>
     </div>
 
-    <p class="updated">آخر تحديث: مايو 2026</p>
+    <p class="updated">آخر تحديث: سبتمبر 2026</p>
   </div>
 
   <!-- ═══════════════════════════════════════════ ENGLISH ═══════ -->
@@ -183,9 +203,11 @@
       <h2>Data We Collect</h2>
       <ul>
         <li>
-          <strong>Approximate Location:</strong>
-          Used <em>only</em> to calculate prayer times for your area.
-          Your location is never sent to our servers or stored outside your device.
+          <strong>Location (precise or approximate, depending on the permission you grant):</strong>
+          Used <em>only</em> to calculate prayer times and the Qibla direction for your area.
+          It is stored on your device, and we have no servers that receive it. Prayer times are
+          usually calculated on the device; when needed, your coordinates are sent to the AlAdhan
+          prayer-time service solely to calculate them, without any identifying information.
         </li>
         <li>
           <strong>App Data (local):</strong>
@@ -203,6 +225,20 @@
           We collect anonymous usage data (e.g. features used, session count)
           to understand how the app is used and improve your experience.
         </li>
+        <li>
+          <strong>Ad Measurement (Meta SDK):</strong>
+          We advertise the app on Facebook and Instagram. When you open the app, Meta's SDK
+          sends technical data (such as app install and open events, device model and OS version,
+          and technical identifiers) so we can tell whether an install came from one of our ads.
+          Advertising ID (Advertising ID / IDFA) collection is turned off, we do not use this
+          data to track you across other apps or websites, and the app shows no ads.
+        </li>
+        <li>
+          <strong>Feedback (optional):</strong>
+          If you send feedback from inside the app, we receive your message, the app version and
+          language, and your email address only if you choose to enter it so we can reply.
+          It is stored in our private Google Sheet and used for nothing else.
+        </li>
       </ul>
     </div>
 
@@ -210,8 +246,8 @@
       <h2>What We Never Collect</h2>
       <ul>
         <li>We do not require an account or login.</li>
-        <li>We do not collect your name, email, or any identifying information.</li>
-        <li>We do not sell or share your data with third parties for commercial purposes.</li>
+        <li>We do not collect your name, or your email unless you type it into the feedback form yourself.</li>
+        <li>We do not sell your data. We only share the technical data described above with Google (Firebase) and Meta for performance and ad measurement.</li>
         <li>We do not track your location in the background.</li>
       </ul>
     </div>
@@ -231,6 +267,11 @@
         <li>
           <a href="https://firebase.google.com/support/privacy" target="_blank">
             Google Firebase (Crashlytics &amp; Analytics)
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/privacy/policy/" target="_blank">
+            Meta (Facebook SDK) – Ad measurement
           </a>
         </li>
         <li>
@@ -266,7 +307,7 @@
       </p>
     </div>
 
-    <p class="updated">Last updated: May 2026</p>
+    <p class="updated">Last updated: September 2026</p>
   </div>
 
 </div>
